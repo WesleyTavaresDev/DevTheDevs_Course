@@ -1,25 +1,25 @@
 class Main 
 {
+  int[] numbers = {1, 2, 3, 4, 5, 6};
+
   public static void main(String[] args) 
   {
     Main mainClass = new Main();
-    int[] numbers = {1, 2, 3, 4, 5, 6};
 
-    mainClass.PrintHorizontalNumbers(numbers);
+    mainClass.PrintHorizontalNumbers();
 
-    System.out.println();
-    
-    mainClass.PrintVerticalNumbers(numbers);
+    System.out.println(); 
+    mainClass.PrintVerticalNumbers();
     mainClass.PrintTree();
   }
 
-  void PrintHorizontalNumbers(int[] numbers)
+  void PrintHorizontalNumbers()
   {
     for(int i = 0; i < numbers.length; i++)   
       System.out.print(i < numbers.length - 1 ? numbers[i] + " - " : numbers[i]); 
   }
 
-  void PrintVerticalNumbers(int[] numbers)
+  void PrintVerticalNumbers()
   {
     System.out.println();
     for(int j = 0; j < numbers.length; j++)
