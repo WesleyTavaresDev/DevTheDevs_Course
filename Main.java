@@ -8,7 +8,8 @@ class Main
 
     mainClass.PrintHorizontalNumbers();
 
-    System.out.println(); 
+    System.out.println();
+ 
     mainClass.PrintVerticalNumbers();
     mainClass.PrintTree();
   }
